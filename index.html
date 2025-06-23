@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="pageTitle"></title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 设置网页图标 | Set webpage icon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- 用于输入名字的容器 | Container for name input -->
+    <div id="nameInputContainer" style="display: none;">
+        <div id="sidehead-wrapper">
+            <p class="free-notice" data-i18n="freeNotice"></p>
+            <!-- 可点击链接元素 | Clickable link elements -->
+            <a href="https://www.xiaohongshu.com/user/profile/5d47ef8e000000001203de79" id="xiaohongshuLink" target="_blank" data-i18n="xiaohongshuLinkText"></a>
+            <a href="https://www.douyin.com/user/MS4wLjABAAAAe0T2npKNPtRfu3yLhwnCWtJU5Agwb6WY9g_2mnqKfZM" id="douyinLink" target="_blank" data-i18n="douyinLinkText"></a>
+            <a href="https://github.com/JayMuShui/tang-love" id="repoLink" target="_blank" data-i18n="repoLinkText"></a>
+            <img id="sidehead" src="assets/images/sidehead.webp" alt="Side head">           
+        </div>
+        <h1 id="greeting" data-i18n="greeting"></h1>
+        <p id="subGreeting" data-i18n="subGreeting"></p>
+        <input type="text" id="usernameInput" data-i18n-placeholder="usernamePlaceholder">
+        
+        <!-- 操作行 | Action Row -->
+        <div class="action-row">
+            <button id="confirmNameButton" data-i18n="confirmButton"></button>
+            <select id="languageSelect" class="styled-select"></select>
+        </div>
+    </div>
+
+    <!-- 表白内容容器 | Confession content container -->
+    <div class="container" id="confessionContainer" style="display: none;">
+        <div class="animation-wrapper">
+        <div class="content-group">
+        <img id="mainImage" src="assets/images/heart.webp" alt="Love">
+        <h1 id="question" data-i18n="questionTemplate"></h1>
+        <div class="buttons">
+            <button id="yes" data-i18n="yesButton"></button>
+            <button id="no" data-i18n="noButton"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
